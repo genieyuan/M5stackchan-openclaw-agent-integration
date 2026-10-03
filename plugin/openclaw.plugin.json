@@ -1,0 +1,76 @@
+{
+  "id": "stackchan",
+  "name": "StackChan",
+  "version": "0.1.0",
+  "description": "StackChan voice terminal channel: fixed route from an authenticated local voice edge to one OpenClaw agent",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "tlsKeyPath",
+      "tlsCertPath",
+      "tlsCaPath"
+    ],
+    "properties": {
+      "listenHost": {
+        "type": "string"
+      },
+      "port": {
+        "type": "integer"
+      },
+      "tlsKeyPath": {
+        "type": "string"
+      },
+      "tlsCertPath": {
+        "type": "string"
+      },
+      "tlsCaPath": {
+        "type": "string"
+      },
+      "edgeCertCN": {
+        "type": "string"
+      },
+      "agentId": {
+        "type": "string"
+      },
+      "accountId": {
+        "type": "string"
+      },
+      "agentName": {
+        "type": "string"
+      },
+      "childName": {
+        "type": "string"
+      },
+      "timeZone": {
+        "type": "string"
+      },
+      "nameMishearings": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "statusLogPath": {
+        "type": "string"
+      },
+      "conversationLogDir": {
+        "type": "string"
+      },
+      "logFileSuffix": {
+        "type": "string"
+      },
+      "model": {
+        "type": "string"
+      }
+    }
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "contracts": {
+    "tools": [
+      "stackchan_move"
+    ]
+  }
+}

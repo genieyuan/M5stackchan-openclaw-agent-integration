@@ -1,0 +1,1 @@
+{ "name": "stackchan-openclaw-plugin", "version": "0.1.0", "private": true, "type": "module", "main": "index.mjs", "engines": { "node": ">=22.13" } }

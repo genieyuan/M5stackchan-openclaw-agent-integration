@@ -1,0 +1,29 @@
+{
+  "plugins": {
+    "load": { "paths": ["/path/to/M5stackchan-openclaw-agent-integration/plugin"] },
+    "allow": ["stackchan"],
+    "entries": {
+      "stackchan": {
+        "enabled": true,
+        "subagent": { "allowModelOverride": true, "allowedModels": ["your-provider/your-fast-model"] },
+        "config": {
+          "listenHost": "192.168.1.60",
+          "port": 7444,
+          "tlsKeyPath": "/path/to/pki/channel.key",
+          "tlsCertPath": "/path/to/pki/channel.crt",
+          "tlsCaPath": "/path/to/pki/ca.crt",
+          "edgeCertCN": "stackchan-edge",
+          "agentId": "main",
+          "accountId": "stackchan",
+          "agentName": "Robo",
+          "childName": "Sam",
+          "timeZone": "Europe/London",
+          "nameMishearings": [],
+          "statusLogPath": "/path/to/state/stackchan-status.jsonl",
+          "conversationLogDir": null,
+          "model": "your-provider/your-fast-model"
+        }
+      }
+    }
+  }
+}

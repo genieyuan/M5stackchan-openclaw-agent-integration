@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>Label</key><string>com.stackchan.edge</string>
+  <key>ProgramArguments</key><array>
+    <string>/path/to/repo/edge-venv/bin/python</string><string>/path/to/repo/edge/edge.py</string>
+  </array>
+  <key>WorkingDirectory</key><string>/path/to/repo/edge</string>
+  <key>EnvironmentVariables</key><dict><key>PYTHONUNBUFFERED</key><string>1</string></dict>
+  <key>RunAtLoad</key><true/><key>KeepAlive</key><true/><key>ThrottleInterval</key><integer>10</integer>
+  <key>StandardOutPath</key><string>/path/to/repo/edge/logs/edge.log</string>
+  <key>StandardErrorPath</key><string>/path/to/repo/edge/logs/edge.log</string>
+</dict></plist>

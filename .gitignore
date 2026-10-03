@@ -1,0 +1,12 @@
+edge/config.json
+edge/state/
+edge/logs/
+pki/
+models/
+*venv*/
+backups/
+tools/nvs_*.py
+tools/*.bin
+tools/*.csv
+**/__pycache__/
+.DS_Store

@@ -1,0 +1,10 @@
+{
+  "bind": "192.168.1.50",
+  "port": 8003,
+  "device_mac": "aa:bb:cc:dd:ee:ff",
+  "device_client_id": "00000000-0000-4000-8000-000000000000",
+  "channel_url": "https://192.168.1.60:7444",
+  "quiet_until": null,
+  "jev_key_command": null,
+  "notify_command": null
+}
